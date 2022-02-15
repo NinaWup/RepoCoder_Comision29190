@@ -13,20 +13,21 @@
 
 <body>
     <header>
-        <nav class="menu">
-            <div class="menu_logo">
-                <a href="#"><img class="menu_logoImg" src="./multimedia/logotipo-alternautas.png"
+        <nav>
+            <div class="logo"">
+                <a href="#"><img class="logo_img" src="./multimedia/logotipo-alternautas.png"
                         alt="logotipo de alternautas ac" /></a>
             </div>
-
-            <ul class="menu_lista">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./vistas/equipo.html">Equipo</a></li>
-                <li><a href="./vistas/servicios.html">Servicios</a></li>
-                <li><a href="./vistas/proyectos.html">Proyectos</a></li>
-                <li><a href="./vistas/contacto.html">Contacto</a></li>
-            </ul>
-            <button class="btn_ingresar">Ingresar</button>
+            <div class="menu_container">
+                <ul class="menu_list">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./vistas/equipo.html">Equipo</a></li>
+                    <li><a href="./vistas/servicios.html">Servicios</a></li>
+                    <li><a href="./vistas/proyectos.html">Proyectos</a></li>
+                    <li><a href="./vistas/contacto.html">Contacto</a></li>
+                </ul>
+                <button class="btn_primary">Ingresar</button>
+            </div>
         </nav>
     </header>
     <section class="hero">
@@ -38,18 +39,16 @@
                 transmitir conocimientos.
             </p>
         </div>
-        <div class="hero_imgcontainer">
+        
             <img class="hero_img" src="./multimedia/learn_small.jpg"
                 alt="cosas de estudio: computdora,libros,cuadernos" />
-        </div>
+    
     </section>
-
-    <hr />
 
     <main>
         <section class="section_somos">
             <h2>¿Quiénes Somos?</h2>
-            <article class="article">
+            <article class="somos_article">
                 <div class="article_text">
                     <h3>Nosotros</h3>
                     <p>Somos una asociación civil de México.</p>
@@ -60,7 +59,7 @@
                     <img class="article_img" src="./multimedia/estudio_small.jpg" alt="chica anotando en un libro" />
                 </picture>
             </article>
-            <article class="article">
+            <article class="somos_article">
                 <div class="article_text">
                     <h3>Educación expandida</h3>
                     <p>
@@ -84,11 +83,11 @@
                     <li>feature 5</li>
                     <li>feature 4</li>
                 </ul>
-                <p>
-                    Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                    eirmod
-                </p>
             </div>
+            <p>
+                Ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                eirmod
+            </p>
         </section>
 
         <section class="section_hacemos">
@@ -122,16 +121,13 @@
                 </div>
             </article>
         </section>
-        <hr />
-        <section>
+        <section class="testimonials">
             <h2>Testimonials</h2>
         </section>
-        <hr />
     </main>
-    <hr />
+   
 
     <footer id="footer">
-        <img src="" alt="" />
         <ul class="socialmedia">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -143,8 +139,11 @@
             <li>Comunidad</li>
             <li>Legales</li>
         </ul>
-        <button>Registrarse</button>
-        <button>Ingresar</button>
+        <div class="footer_buttons">
+            <button class="footer_button">Registrarse</button>
+            <button class="footer_button">Ingresar</button>
+        </div>
+       
     </footer>
 </body>
 
