@@ -2,106 +2,90 @@
 
 /*estilos generales*/
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 /*estilos de clases y selectores compuestos*/
-.menu {
-    display: flex;
-    background-color: rgb(102, 180, 216);
-    height: 3.5rem;
-    padding: 1rem;
-    height: 4.5rem;
-    width: 100vw;
+nav {
+  display: flex;
+  background-color: rgb(0, 168, 181);
+  height: 4.5rem;
+  padding: 0.5rem;
+  justify-content: space-between;
 }
 
-.menu_logoImg {
-    padding: 0.2rem;
-    height: 3rem;
-    width: 3rem;
+.logo {
+  padding: 0.2rem;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
 }
 
-.menu_lista {
-    list-style: none;
-    margin: 5px;
-    width: 50%;
-    margin-left: 40rem;
+.logo_img {
+  height: 3rem;
+  width: 3rem;
 }
 
-.menu_lista li {
-    display: inline-block;
-    width: 10%;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    text-align: center;
+.menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+.menu_list {
+  display: flex;
+  list-style: none;
+}
+.menu_list li a {
+  text-decoration: none;
+  color: rgb(16, 92, 128);
+  margin-right: 2rem;
+  font-weight: bold;
+}
+.menu_list li a:hover {
+  color: white;
+}
+.btn_primary {
+  width: 8rem;
+  height: 3rem;
+  background-color: rgb(9, 52, 71);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn_primary:hover {
+  background-color: aliceblue;
+  border: 1px solid rgb(16, 92, 128);
+  color: rgb(9, 52, 71);
 }
 
-.menu_lista a {
-    display: inline-block;
-    color: rgb(16, 92, 128);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.menu_lista a:hover {
-    color: white;
-}
-
-.btn_ingresar {
-    width: 8rem;
-    height: 3rem;
-    background-color: rgb(9, 52, 71);
-    color: white;
-    border: none;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-.btn_ingresar:hover {
-    background-color: aliceblue;
-    border: 1px solid rgb(16, 92, 128);
-    color: rgb(9, 52, 71);
-}
-
-/*seccion hero*/
 .hero {
-    background-color: rgb(16, 92, 128);
-}
-
-.hero_div {
-    text-align: center;
-    padding-top: 2rem;
-    /* display: flexbox;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center; */
+  background-color: rgb(16, 92, 128);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .herodiv_span {
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgb(185, 211, 124);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(185, 211, 124);
 }
-
 .herodiv_text {
-    color: aliceblue;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    letter-spacing: normal;
-    font-style: italic;
-}
-
-.hero_imgcontainer {
-    width: 100vw;
-    height: 500px;
-    padding: 0;
+  color: aliceblue;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  font-style: italic;
 }
 
 .hero_img {
-    margin-top: 4rem;
+    margin: 4rem;
     height: 400px;
     display: block;
     margin-left: auto;
@@ -109,47 +93,31 @@
     border-radius: 1rem;
 }
 
-/*seccion somos*/
-
 .section_somos {
-    background-color: #008b8b;
-    color: aliceblue;
-    width: 100vw;
-}
-
-.article {
-    width: 100%;
-    height: 100%;
+    display:flex; 
+    flex-direction:column;
+    margin: 2rem;
 }
 
 .section_somos h2 {
-    padding-top: 3rem;
-    margin-top: -1rem;
     text-align: center;
 }
 
-.article_text {
-    margin-top: 1.5rem;
-    margin-right: 4rem;
-    text-align: center;
-    width: 40%;
-    float: right;
+.somos_article {
+display:flex;
+width:100%;
 }
 
-.article_text h3 {
-    margin-top: 7rem;
-    font-size: 1.2rem;
+.article_text{
+    width:40%;
+    justify-self:center;
+    align-self:center;
+    text-align:center;
 }
-
-.article_text p {
-    margin-top: 1rem;
-    font-size: 1rem;
-}
-
 .article_imgContainer {
-    width: 50vw;
+    width: 50%;
+    margin-left: 6rem;
 }
-
 .article_img {
     width: 400px;
     height: 300px;
@@ -157,153 +125,129 @@
     border-radius: 1rem;
 }
 
-/* seccion featutes */
-
-.section_features {
-    background-color: rgb(150, 102, 196);
+.section_features{
+    background-color: rgb(119, 72, 152);
     color: #f0f8ff;
     width: 100vw;
     height: 100%;
     padding: 0;
     margin: 0;
 }
-
-
+.article{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
 .article_list {
-    display: inline;
-    margin-left: 9rem;
+    display: flex;
+    justify-content:center;
 }
 
 .article_list li {
-    display: inline-block;
+    margin:3rem;
+    list-style: none;
     font-size: 1.5rem;
     color: aliceblue;
-    font-style: oblique;
-    margin-right: 5rem;
-    height: 5rem;
-    padding: 2rem;
+    font-style: oblique; 
 }
+.article_paragraph{
+    display: flex;
+    justify-content: center;
 
-.section_features p {
-    text-align: center;
-    font-style: italic;
-    font-size: 2rem;
-    display: block;
-    margin-top: 2rem;
-    height: 20vh;
 }
+ .section_features p {
+     color: aliceblue;
+     text-align: center;
+     font-size: 1.5rem;
+     font-style: italic;
+     padding-bottom: 3rem;
+ }
 
-
-/*seccion loque hacemos*/
 .section_hacemos {
-    background-color: rgb(16, 92, 128);
+    background-color: rgb(230, 42, 118);
     color: aliceblue;
-    width: 100vw;
+    width: 100%;
+   
+}
+
+.section_hacemos article {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    margin-right: 4rem;
+    justify-items: center;
+    padding-bottom: 3rem;
 }
 
 .section_hacemos h2 {
-    padding-top: 3rem;
-    margin-top: -3rem;
     text-align: center;
+    padding: 3rem 0 3rem 0;
 }
-
-
-.card {
-    height: 500px;
-    border-style: dotted;
-    border-radius: 1rem;
-    display: inline-block;
-    margin: 2.8rem;
+.card h4, p {
+    color: aliceblue;
+    text-align:center;
 }
-
-.card h4,
-p {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+.card h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
-
-.card h4 {
+.card p {
     font-size: 1.2rem;
+    font-style: italic;
 }
 
-#footer {
-    background-color: rgb(150, 102, 196);
+.card hr {
+    width: 100%;
+}
+
+.testimonials {
+    background:  rgb(16, 92, 128);
+    height: 500px;
+}
+.testimonials h2 {
+    margin-top: -1rem;
+    padding-top: 3rem;
+    text-align:center;
+    color: aliceblue
+}
+footer{
+    background: rgb(0, 168, 181);
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.socialmedia {
+    padding-top: 3rem;
+    color: cornsilk;
+    justify-self: center;
+}
+
+.socialmedia i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
 }
 
 .footerList {
     color: cornsilk;
+    margin-right: 1rem;
+    justify-self: center;
+    padding-top: 2rem;
+    margin-bottom:2rem;
+    display: flex;
 }
 
-.socialmedia {
-    color: cornsilk;
+.footerList li {
+   list-style: none;
+   margin:1rem;
 }
-
-/*página equipo*/
-
-.headEquipo {
-    background-color: rgb(16, 92, 128);
-    color: aliceblue;
-    padding: 90px;
+.footer_buttons {
+    display: flex;
+    justify-content: space-around;
 }
-
-.headEquipo h2 {
-    margin: 1rem;
-}
-
-.headEquipo p {
-    margin: 1rem;
-    padding: 2rem;
-}
-
-.featureEquipo_div {
-    color: rgb(9, 48, 94);
-    width: 400px;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-.featureEquipo_div p {
-    padding: 1rem;
-}
-
-/*página servicios*/
-
-.headServicios {
-    background-color: rgb(16, 92, 128);
-    color: rgb(245, 245, 244);
-    padding: 2rem;
-}
-
-.proceso {
-    background-color: rgb(73, 168, 212);
-    padding: 3rem;
-}
-
-.proceso_img {
-    width: 600px;
-    height: 420px;
-    margin: 1rem;
-    padding: 2rem;
-}
-
-.proceso_ul {
-    margin: 1rem;
-    padding: 2rem;
-    color: aliceblue;
-}
-
-/*página contacto*/
-
-.formulario {
-    background-color: darkgray;
-}
-
-.card_equipo {
-    width: 400px;
-    height: 200px;
-    box-shadow: 0 4px 2px 0 rgba(0, 0, 0, 0.2);
-    border-style: solid;
-    border-radius: 2px;
-    position: relative;
+.footer_button {
+    margin-top: 3rem;
+    height: 2rem;
+    padding:0 2rem 0 2rem;
+    border: none;
 }
